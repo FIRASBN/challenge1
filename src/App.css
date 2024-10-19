@@ -2,37 +2,126 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: flex-start; /* Align items at the start */
+  align-items: center;
+  width: 70%;
+  margin: 0 auto; /* Center the container */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  height: 40px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav {
+  margin-left: 100px;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 20px;
+  background-image: url('./assets/home/desktop/image-hero-paramour.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  width: 66%; 
+  margin: auto;
+  height: 90vh; 
+  
+}
+.containermain{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  padding: 20px;
+  margin: 60px;
+}
+.containermain h1 {
   color: white;
+  font-size: 5rem;
+  text-align:left;
+  margin-bottom: 20px;
+}
+.containermain p {
+  color: white;
+  font-size: 1rem;
+  text-align:left;
+}
+.containermain button {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin-top: 20px ;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.containermain button:hover {
+  background-color: gray; /* Gray background on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start; 
+  padding: 0;
+  position: absolute;
+  left: 0;
+  margin-left: 166px; 
+  margin-top: 36px;
+  width: auto;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: gray; /* Gray text color */
+  background-color: white; /* White background */
+  padding: 12px 16px;
+  font-size: 30px;
+  border:0 solid #ddd;
+  
+}
+
+.pagination a:hover {
+  background-color: black; /* Black background on hover */
+  color: white; /* White text on hover */
+}
+
+.pagination a.active {
+  background-color: black; /* Black background for active page */
+  color: white; /* White text for active page */
 }
