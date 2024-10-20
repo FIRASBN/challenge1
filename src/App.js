@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <Main/>
+      <img src="./assets/home/desktop/image-hero-federal.jpg" alt="test" />
       
     </div>
   );

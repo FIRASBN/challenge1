@@ -5,15 +5,18 @@ import { ReactComponent as Logo } from "./assets/logo.svg"; // Ensure the path i
 export default function Header() {
     return (
         <header className="header">
+            <div className="vertical-line">
+                <span>Home</span>
+            </div>
             <div className="container">
-                <Logo/>
+                <Logo />
                 <nav className="nav">
                     <ul>
                         <li>
                             <a href="#projects">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about">About us</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
