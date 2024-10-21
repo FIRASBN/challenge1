@@ -7,11 +7,10 @@ import Welcome from "./welcom.js";
 function Home() {
   return (
     <div className="App">
-      <Header/>
-      <Main/>
-      <Welcome/>
-      <Footer/>
-      
+      <Header />
+      <Main />
+      <Welcome />
+      <Footer />
     </div>
   );
 }
