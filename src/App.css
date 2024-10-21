@@ -76,8 +76,6 @@
 main {
   position: relative;
   padding: 20px;
-  background-size: cover;
-  background-position: center;
   width: 70%;
   margin: auto;
   height: 90vh;
@@ -90,17 +88,32 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/home/desktop/image-hero-paramour.jpg");
   filter: brightness(0.6);
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 
+.bg-image-1::before {
+  background-image: url('assets/home/desktop/image-hero-paramour.jpg');
+}
+
+.bg-image-2::before {
+  background-image: url('assets/home/desktop/image-hero-federal.jpg');
+}
+
+.bg-image-3::before {
+  background-image: url('assets/home/desktop/image-hero-seraph.jpg');
+}
+
+.bg-image-4::before {
+  background-image: url('assets/home/desktop/image-hero-trinity.jpg');
+}
+
 .containermain {
+  position: relative;
   display: flex;
   flex-direction: column;
-
   width: 50%;
   padding: 20px;
   margin: 50px;
@@ -137,12 +150,10 @@ main::before {
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
-  padding: 0;
   position: absolute;
-  left: 0;
-  margin-left: -84px;
-  margin-top: 40px;
-  width: auto;
+  bottom: 8px;
+  left: -124px;
+  
 }
 
 .pagination a {
@@ -160,6 +171,22 @@ main::before {
 }
 
 .pagination a.active {
-  background-color: black; /* Black background for active page */
-  color: white; /* White text for active page */
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  background: #000;
+}
+
+
+.welc-container {
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+
+}
+.welc-container h1 {
+  color :#ddd ;
+  font-size: 11rem;
 }
