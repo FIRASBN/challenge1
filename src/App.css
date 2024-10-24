@@ -95,19 +95,19 @@ main::before {
 }
 
 .bg-image-1::before {
-  background-image: url('assets/home/desktop/image-hero-paramour.jpg');
+  background-image: url("assets/home/desktop/image-hero-paramour.jpg");
 }
 
 .bg-image-2::before {
-  background-image: url('assets/home/desktop/image-hero-federal.jpg');
+  background-image: url("assets/home/desktop/image-hero-federal.jpg");
 }
 
 .bg-image-3::before {
-  background-image: url('assets/home/desktop/image-hero-seraph.jpg');
+  background-image: url("assets/home/desktop/image-hero-seraph.jpg");
 }
 
 .bg-image-4::before {
-  background-image: url('assets/home/desktop/image-hero-trinity.jpg');
+  background-image: url("assets/home/desktop/image-hero-trinity.jpg");
 }
 
 .containermain {
@@ -153,7 +153,6 @@ main::before {
   position: absolute;
   bottom: 8px;
   left: -124px;
-  
 }
 
 .pagination a {
@@ -177,16 +176,54 @@ main::before {
 
 .footer-container {
   background: #000;
+  width: 100%;
 }
-
 
 .welc-container {
-  display:flex;
+  display: flex;
   justify-content:flex-start;
-  align-items: center;
-
+  flex-direction: column ;
+  width: 73%;
+  margin: 50px auto;
+  height: 110vh;
 }
 .welc-container h1 {
-  color :#ddd ;
-  font-size: 11rem;
+  color: #ddd;
+  font-size: 14rem;
+  z-index: 1;
+  margin: 0;
+  text-align: left;
+}
+.welc-container img {
+  width: 320px;
+  height: 650px;
+  z-index: -1;
+  position: absolute;
+  margin-left: 784px;
+  margin-top: 160px;
+
+}
+
+.par-container {
+  position: absolute;
+  width: 400px;
+  margin-left: 190px;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.par-container h2 {
+  text-align: left;
+  font-size: 3.5rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.par-container p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
 }
