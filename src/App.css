@@ -130,7 +130,7 @@ main::before {
   font-size: 1rem;
   text-align: left;
 }
-.containermain button {
+.buttum {
   background-color: black;
   color: white;
   border: none;
@@ -142,7 +142,7 @@ main::before {
   width: 40%;
 }
 
-.containermain button:hover {
+.buttum:hover {
   background-color: gray;
 }
 
@@ -181,10 +181,10 @@ main::before {
 
 .welc-container {
   display: flex;
-  justify-content:flex-start;
-  flex-direction: column ;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 73%;
-  margin: 50px auto;
+  margin: auto;
   height: 110vh;
 }
 .welc-container h1 {
@@ -201,7 +201,6 @@ main::before {
   position: absolute;
   margin-left: 784px;
   margin-top: 160px;
-
 }
 
 .par-container {
@@ -225,5 +224,69 @@ main::before {
   font-size: 1em;
   line-height: 1.5;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 73%;
+  margin: 170px auto;
+  height: 77vh;
+  background-image: url("assets/home/desktop/image-small-team.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.items-link {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+  margin: 50px;
+  margin-left: 130px;
+}
+.items-link h1 {
+  color: white;
+  font-size: 5rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 73%;
+  margin: 170px auto;
+  height: 77vh;
+}
+.take-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.take-container h1 {
+  color: #000;
+  font-size: 4rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.buttum-cards {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 160px;
+  height: 80px;
+  font-size: large;
+  margin-top: 35px;
+}
+
+.buttum-cards:hover {
+  background-color: gray;
 }

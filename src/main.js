@@ -42,7 +42,7 @@ function Main() {
             {line}<br />
           </React.Fragment>
         ))}</p>
-        <button><strong>See Your Portfolio</strong><Logo /></button>
+        <button className='buttum'><strong>See Your Portfolio</strong><Logo /></button>
       </div>
       <div>
         <ul className="pagination">
